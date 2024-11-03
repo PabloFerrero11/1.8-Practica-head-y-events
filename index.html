@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica bloque 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function mostrarMensaje() {
+            const nombre = document.getElementById("nombre").value;
+            const apellido1 = document.getElementById("apellido1").value;
+            if (nombre && apellido1) {
+                alert(`Bienvenido ${nombre} ${apellido1}`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Práctica bloque 3</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="apellido1">Apellido 1:</label>
+            <input type="text" id="apellido1" name="apellido1" onblur="mostrarMensaje()"><br><br>
+        </form>
+    </main>
+</body>
+</html>
+
